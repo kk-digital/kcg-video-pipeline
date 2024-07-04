@@ -1,0 +1,185 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=kk7XWcIH2BA
+Connecting to minio client...
+Successfully connected to minio client...
+Loading image-process-encoder model
+Successfully loaded the model
+[youtube] kk7XWcIH2BA: Downloading webpage
+[youtube] kk7XWcIH2BA: Downloading ios player API JSON
+[youtube] kk7XWcIH2BA: Downloading m3u8 information
+[youtube] Extracting URL: https://www.youtube.com/watch?v=kk7XWcIH2BA
+[youtube] kk7XWcIH2BA: Downloading webpage
+[youtube] kk7XWcIH2BA: Downloading ios player API JSON
+[youtube] kk7XWcIH2BA: Downloading m3u8 information
+[info] kk7XWcIH2BA: Downloading 1 format(s): 136
+[download] output/temp/kk7XWcIH2BA/kk7XWcIH2BA.mp4 has already been downloaded
+[download] 100% of  109.93MiB
+100 output/temp/kk7XWcIH2BA/kk7XWcIH2BA.mp4
+1000
+test0001/0001/000001.mp4: |#-------------------| 10.00 MB/109.93 MB   9% [elapsed: 00:00 left: 00:00, 1029.43 MB/sec]test0001/0001/000001.mp4: |###-----------------| 20.00 MB/109.93 MB  18% [elapsed: 00:00 left: 00:02, 43.02 MB/sec]  test0001/0001/000001.mp4: |#####---------------| 30.00 MB/109.93 MB  27% [elapsed: 00:00 left: 00:01, 63.62 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:00 left: 00:00, 84.08 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:01 left: 00:02, 27.10 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:02 left: 00:04, 16.15 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:03 left: 00:06, 11.51 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:04 left: 00:07,  8.94 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:05 left: 00:09,  7.30 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:06 left: 00:11,  6.18 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:07 left: 00:13,  5.35 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:08 left: 00:14,  4.72 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:09 left: 00:16,  4.22 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:10 left: 00:18,  3.82 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:11 left: 00:20,  3.48 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:12 left: 00:21,  3.21 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:13 left: 00:23,  2.97 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:14 left: 00:25,  2.76 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:15 left: 00:27,  2.58 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:16 left: 00:28,  2.43 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:17 left: 00:30,  2.29 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:18 left: 00:32,  2.16 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:19 left: 00:34,  2.05 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:20 left: 00:35,  1.95 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:21 left: 00:37,  1.86 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:22 left: 00:39,  1.78 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:23 left: 00:41,  1.70 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:24 left: 00:42,  1.63 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:25 left: 00:44,  1.57 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:26 left: 00:46,  1.51 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:27 left: 00:48,  1.46 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:28 left: 00:49,  1.40 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:29 left: 00:51,  1.36 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:30 left: 00:53,  1.31 MB/sec]test0001/0001/000001.mp4: |#######-------------| 40.00 MB/109.93 MB  36% [elapsed: 00:31 left: 00:55,  1.27 MB/sec]test0001/0001/000001.mp4: |#########-----------| 50.00 MB/109.93 MB  45% [elapsed: 00:31 left: 00:37,  1.58 MB/sec]test0001/0001/000001.mp4: |##########----------| 60.00 MB/109.93 MB  54% [elapsed: 00:31 left: 00:26,  1.89 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:31 left: 00:18,  2.19 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:32 left: 00:18,  2.13 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:33 left: 00:19,  2.06 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:34 left: 00:19,  2.00 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:35 left: 00:20,  1.95 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:36 left: 00:21,  1.90 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:37 left: 00:21,  1.85 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:38 left: 00:22,  1.80 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:39 left: 00:22,  1.75 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:40 left: 00:23,  1.71 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:41 left: 00:23,  1.67 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:42 left: 00:24,  1.63 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:43 left: 00:25,  1.59 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:44 left: 00:25,  1.56 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:45 left: 00:26,  1.52 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:46 left: 00:26,  1.49 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:47 left: 00:27,  1.46 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:48 left: 00:27,  1.43 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:49 left: 00:28,  1.40 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:50 left: 00:29,  1.37 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:51 left: 00:29,  1.35 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:52 left: 00:30,  1.32 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:53 left: 00:30,  1.30 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:54 left: 00:31,  1.27 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:55 left: 00:31,  1.25 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:56 left: 00:32,  1.23 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:57 left: 00:33,  1.21 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:58 left: 00:33,  1.19 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 00:59 left: 00:34,  1.17 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 01:00 left: 00:34,  1.15 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 01:01 left: 00:35,  1.13 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 01:02 left: 00:35,  1.11 MB/sec]test0001/0001/000001.mp4: |############--------| 70.00 MB/109.93 MB  63% [elapsed: 01:03 left: 00:36,  1.09 MB/sec]test0001/0001/000001.mp4: |##############------| 80.00 MB/109.93 MB  72% [elapsed: 01:04 left: 00:24,  1.24 MB/sec]test0001/0001/000001.mp4: |################----| 90.00 MB/109.93 MB  81% [elapsed: 01:04 left: 00:14,  1.39 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:05 left: 00:06,  1.53 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:06 left: 00:06,  1.51 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:07 left: 00:06,  1.49 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:08 left: 00:06,  1.47 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:09 left: 00:06,  1.45 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:10 left: 00:06,  1.42 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:11 left: 00:07,  1.40 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:12 left: 00:07,  1.39 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:13 left: 00:07,  1.37 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:14 left: 00:07,  1.35 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:15 left: 00:07,  1.33 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:16 left: 00:07,  1.31 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:17 left: 00:07,  1.30 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:18 left: 00:07,  1.28 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:19 left: 00:07,  1.26 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:20 left: 00:07,  1.25 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:21 left: 00:08,  1.23 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:22 left: 00:08,  1.22 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:23 left: 00:08,  1.20 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:24 left: 00:08,  1.19 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:25 left: 00:08,  1.17 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:26 left: 00:08,  1.16 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:27 left: 00:08,  1.15 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:28 left: 00:08,  1.13 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:29 left: 00:08,  1.12 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:30 left: 00:08,  1.11 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:31 left: 00:09,  1.10 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:32 left: 00:09,  1.08 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:33 left: 00:09,  1.07 MB/sec]test0001/0001/000001.mp4: |##################--| 100.00 MB/109.93 MB  90% [elapsed: 01:34 left: 00:09,  1.06 MB/sec]test0001/0001/000001.mp4: |####################| 109.93 MB/109.93 MB 100% [elapsed: 01:35 left: 00:00,  1.16 MB/sec]created test0001/0001/000001.mp4 object; etag: 9ace3f0d08242efd4ebd51108b198e4e-11, version-id: None
+created test0001/0001/000001.json object; etag: 2a930ba7e6255c85e8a2f3594a39aeb4, version-id: None
+{'width': 1280, 'height': 720, 'codec': 'h264', 'fps': 30.0}
+test0001/0001/000009_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000003_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000008_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000004_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000007_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000004_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000012_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000011_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000008_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000008_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000002_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000012_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000001_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000011_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000004_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000009_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000002_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000006_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000002_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000005_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000004_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000011_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000007_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000010_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000004_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000008_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000009_clip_kandinsky.msgpack object; etag: 436982992fee27051c3bf4c94a8f4135, version-id: None
+created test0001/0001/000003_clip_kandinsky.msgpack object; etag: edb6c9387eb64099d3ddef0e65104ae4, version-id: None
+created test0001/0001/000009_clip_kandinsky.msgpack object; etag: 0bfe4be6e86d7f6b27ce32f8a3ca1786, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: bc9a4e6025d5ed5773978cb011513a75, version-id: None
+created test0001/0001/000002_clip_kandinsky.msgpack object; etag: 29f6e2f597b01cb086a1c2c47d9e8fc4, version-id: None
+created test0001/0001/000010_clip_kandinsky.msgpack object; etag: a5a0789aaa2dfe7a9033a22e2bf62ace, version-id: None
+created test0001/0001/000005_clip_kandinsky.msgpack object; etag: 79f8a811f9aca5abad42b2d8e3e1081e, version-id: None
+created test0001/0001/000011_clip_kandinsky.msgpack object; etag: c12ca791d59e71e584bf5ebdd7f15e9f, version-id: None
+created test0001/0001/000004_clip_kandinsky.msgpack object; etag: 7fd2e62c4af115af7fe0c110c7fe1eec, version-id: None
+created test0001/0001/000004_clip_kandinsky.msgpack object; etag: 781b8577356aeced0adfa5d6d7f98b1c, version-id: None
+created test0001/0001/000007_clip_kandinsky.msgpack object; etag: fb158b825b724448b2417dc3686b32f7, version-id: None
+created test0001/0001/000008_clip_kandinsky.msgpack object; etag: 694b206b42d1dd1bfa7bf87dd347cc85, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: 6d7c6e127202476c48c9eb73f9e63eac, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: bf0d088753c905ec97560097857bfbfa, version-id: None
+test0001/0001/000013_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000004_clip_kandinsky.msgpack object; etag: 071611a52bf04741a47967d4c2323b7f, version-id: None
+created test0001/0001/000008_clip_kandinsky.msgpack object; etag: 0efe0675b00cb41bb3a29a87d918c0d6, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: 15d7c271e21ba632d55161dd4f8d0780, version-id: None
+created test0001/0001/000007_clip_kandinsky.msgpack object; etag: 31ed4ad7b94d0c3feb1927e3ea1fb23b, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: 4cff6b236a0d9a3478eb8365ad3dfc15, version-id: None
+created test0001/0001/000011_clip_kandinsky.msgpack object; etag: caa65af5d8eb0721be339df69ea5f4f3, version-id: None
+created test0001/0001/000004_clip_kandinsky.msgpack object; etag: a3b86b0c5278cf37f0b97b36fa5c443a, version-id: None
+created test0001/0001/000012_clip_kandinsky.msgpack object; etag: 53dec16139b114c68ecb980b1acb3c03, version-id: None
+created test0001/0001/000002_clip_kandinsky.msgpack object; etag: f0366ccb55cd75039d3301133daee685, version-id: None
+created test0001/0001/000012_clip_kandinsky.msgpack object; etag: b2c284d8ce1da75575d5ecf7fcb6d1f5, version-id: None
+created test0001/0001/000001_clip_kandinsky.msgpack object; etag: b7955034896cb475f3a6f6f35f14d776, version-id: None
+created test0001/0001/000008_clip_kandinsky.msgpack object; etag: ff3758e571efe8b61fbec785db9199dc, version-id: None
+created test0001/0001/000004_clip_kandinsky.msgpack object; etag: 1791abe6b00334fa7c54e1a330a01a35, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: 970734c3ebb24a7128d742514c3a56ae, version-id: None
+created test0001/0001/000011_clip_kandinsky.msgpack object; etag: ea8058be580be51be96211ff00d55434, version-id: None
+created test0001/0001/000006_clip_kandinsky.msgpack object; etag: 1bcaf1f80d29c4543b397004dc0bae46, version-id: None
+created test0001/0001/000013_clip_kandinsky.msgpack object; etag: 38034e112078df746613c85c8658bf67, version-id: None
+created test0001/0001/000008_clip_kandinsky.msgpack object; etag: 1621d674de2c36e7f5c50fd73ca6b8cd, version-id: None
+test0001/0001/000014_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000014_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000014_clip_kandinsky.msgpack object; etag: dfd3b595b41fc111de20a592befbe20d, version-id: None
+test0001/0001/000015_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000016_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000017_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000018_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000020_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000014_clip_kandinsky.msgpack object; etag: 389aa3e18c31c98a6b0b1662c547d564, version-id: None
+test0001/0001/000020_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000021_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000015_clip_kandinsky.msgpack object; etag: a68cdf279d84d174dcc52c47bac3f393, version-id: None
+created test0001/0001/000016_clip_kandinsky.msgpack object; etag: 676bfcbcc577ebd6eaab1cd368e6e607, version-id: None
+test0001/0001/000020_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000020_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000021_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000016_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000017_clip_kandinsky.msgpack object; etag: 3420c2f4867a8a0361a5b40707b6257b, version-id: None
+test0001/0001/000023_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000019_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000024_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000018_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000021_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000017_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000025_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000019_clip_kandinsky.msgpack ------------------------->
+test0001/0001/000022_clip_kandinsky.msgpack ------------------------->
+created test0001/0001/000020_clip_kandinsky.msgpack object; etag: c703be4ae247cf80b0284fc80b6c108b, version-id: None
+created test0001/0001/000018_clip_kandinsky.msgpack object; etag: 103496fe8d885531ad94ea170731ed3b, version-id: None
+created test0001/0001/000020_clip_kandinsky.msgpack object; etag: 355374eac12c3c27d4d4e865f03de153, version-id: None
+created test0001/0001/000021_clip_kandinsky.msgpack object; etag: 919a00c739cc3ba628cc19454949a2e1, version-id: None
+created test0001/0001/000020_clip_kandinsky.msgpack object; etag: cd27a122b5112686e111d279c7fbc9b8, version-id: None
+created test0001/0001/000016_clip_kandinsky.msgpack object; etag: 74fd11aa8842dfb521b538fd6749d6f8, version-id: None
+created test0001/0001/000021_clip_kandinsky.msgpack object; etag: d88cdef6e088e45f46ec39c703777546, version-id: None
+created test0001/0001/000019_clip_kandinsky.msgpack object; etag: f086226ab7f2cc28f285e8472b2a7b61, version-id: None
+created test0001/0001/000020_clip_kandinsky.msgpack object; etag: dd2e211b11262fd09def97db8a859add, version-id: None
+created test0001/0001/000024_clip_kandinsky.msgpack object; etag: 206238f7da0376fa688f4f0cfb90d6fe, version-id: None
+created test0001/0001/000021_clip_kandinsky.msgpack object; etag: dc1c3de7cea1bb78e181f8c87bd6ab63, version-id: None
+created test0001/0001/000019_clip_kandinsky.msgpack object; etag: e1da99f5aaf188329510f98a4134c8fb, version-id: None
+created test0001/0001/000025_clip_kandinsky.msgpack object; etag: 4e61b0a31d772d76e75bf302fb6902d4, version-id: None
+created test0001/0001/000018_clip_kandinsky.msgpack object; etag: 2032b293950fab5a5a7ce5764bca9028, version-id: None
+created test0001/0001/000022_clip_kandinsky.msgpack object; etag: 856f1a71ce41cc4138dc3d701ac31a0f, version-id: None
+created test0001/0001/000017_clip_kandinsky.msgpack object; etag: 46a752fceef9ef98dd071b54517c9fb2, version-id: None
+created test0001/0001/000023_clip_kandinsky.msgpack object; etag: 6943a60cafe8ec325a84fb72b7c7faae, version-id: None
+created test0001/0001/000002_clip_kandinsky.msgpack object; etag: 2cae598ee26a06caf7aa067cc902b86f, version-id: None
+created test0001/0001/000002.jpg object; etag: 4f0662f8b0acf3489e82e9590ef776d0, version-id: None
+created test0001/0001/000006.jpg object; etag: f59b1aaca13ac5875e9a835061f1146b, version-id: None
+created test0001/0001/000004.jpg object; etag: a6455d17a7281361eeb134a5249e6aa3, version-id: None
+created test0001/0001/000002.jpg object; etag: 0929da8f6c75835acae2d79420b17d5a, version-id: None
+created test0001/0001/000004.jpg object; etag: f74908359e8f6cb31195a158061a8040, version-id: None
+created test0001/0001/000006.jpg object; etag: 85632a40efcb392f10af44ac57e9d6a4, version-id: None
+created test0001/0001/000008.jpg object; etag: 7297742223d47b1ed25be80ce983e26b, version-id: None
+created test0001/0001/000006.jpg object; etag: 98b49bd82b754ee786aa9e65ff26618e, version-id: None
+created test0001/0001/000009.jpg object; etag: 4a497c28f4581a63e56a98ad9476f69f, version-id: None
+created test0001/0001/000010.jpg object; etag: ab87a071468edbee3b2241b43f72a42a, version-id: None
+created test0001/0001/000009.jpg object; etag: 2143e4df81f94434c5836394f14591f0, version-id: None
+created test0001/0001/000006.jpg object; etag: b9e669129780c839e46c913ba363a183, version-id: None
+created test0001/0001/000004.jpg object; etag: d6cedfb0e5171734508b0e2795c5a963, version-id: None
+created test0001/0001/000012.jpg object; etag: f5df7433b593774d08dafac1a9b0fcff, version-id: None
+created test0001/0001/000004.jpg object; etag: 5e8c444149b3ff88d148c18a51aa232d, version-id: None
+created test0001/0001/000006.jpg object; etag: 2b6486886cde3abb5445dd2039cfd39f, version-id: None
+created test0001/0001/000005.jpg object; etag: d6ca4c59c8f5d13d23048281c7bb7fd8, version-id: None
+created test0001/0001/000006.jpg object; etag: bc01e12d01f4099652c1e7d64ff6f592, version-id: None
+created test0001/0001/000001.jpg object; etag: 917ba1ac5a4e5999cf190aea38a477a5, version-id: None
+created test0001/0001/000007.jpg object; etag: ec20e54564de6713e5c8a89fc6f51113, version-id: None
+created test0001/0001/000008.jpg object; etag: 882a5e2100c2b0fc9f2f1d48ae7b0816, version-id: None
+created test0001/0001/000003.jpg object; etag: f1299b59db79c2773bb4a6ac5e6b35c9, version-id: None
+created test0001/0001/000007.jpg object; etag: 97e69f2b08476519b6212c1937bc2496, version-id: None
+created test0001/0001/000004.jpg object; etag: a45dcd6b211fbfef64a519d232eb9cf0, version-id: None
+created test0001/0001/000011.jpg object; etag: 0ef568d7da60a17f7a886e1776358736, version-id: None
+created test0001/0001/000008.jpg object; etag: 794584c42c015a4c6b853a8dcefa8dd9, version-id: None
+created test0001/0001/000013.jpg object; etag: 4cb7873ac054e1af82cc74c3628e9b85, version-id: None
+created test0001/0001/000015.jpg object; etag: cd42fed5b0d4bd1393b0b90e81243d2c, version-id: None
+created test0001/0001/000014.jpg object; etag: e269cfa113c340ad08e8cda4b756b0c5, version-id: None
+created test0001/0001/000017.jpg object; etag: 668c749fad74672e7d8fb26b80279621, version-id: None
+created test0001/0001/000014.jpg object; etag: bd24c784fba1acfbd43a2c199786bd36, version-id: None
+created test0001/0001/000020.jpg object; etag: 641c4a434aec40b334f63b86c3224ef4, version-id: None
+created test0001/0001/000002.jpg object; etag: 6db62ee824d74c18426301e8b544b57d, version-id: None
+created test0001/0001/000006.jpg object; etag: 5c647108f25bfbf6faff52bedf213255, version-id: None
+created test0001/0001/000011.jpg object; etag: cef48e6c4eff19d56e74e519dfaf714e, version-id: None
+created test0001/0001/000012.jpg object; etag: 9bb51a171df67533e3eedafb72a6bb7e, version-id: None
+created test0001/0001/000011.jpg object; etag: d2b10998075acd64e27d960c57aa0176, version-id: None
+created test0001/0001/000008.jpg object; etag: 5e64b9c2e03c0c129f36707b53c1ebd4, version-id: None
+created test0001/0001/000016.jpg object; etag: 5e19996626390cd6a75b823f1a608336, version-id: None
+created test0001/0001/000018.jpg object; etag: df5335723ff7b71555dbf937d7e2da8b, version-id: None
+created test0001/0001/000018.jpg object; etag: 392fd87241d4d49a10fb1bacac5456b1, version-id: None
+created test0001/0001/000021.jpg object; etag: c9c6ed09b6289c27cec0226ac63f1c85, version-id: None
+created test0001/0001/000020.jpg object; etag: f06098a6252a9770069663011916fef2, version-id: None
+created test0001/0001/000020.jpg object; etag: 39ed99d490674c5f5c27857ea14d9444, version-id: None
+created test0001/0001/000021.jpg object; etag: 109d81b499e086c86ac08ee04045e954, version-id: None
+created test0001/0001/000016.jpg object; etag: 8f85bc3bd86dfe0013e924137f372b9e, version-id: None
+created test0001/0001/000020.jpg object; etag: 5653847375118e926b9c812e528f5f4c, version-id: None
+created test0001/0001/000024.jpg object; etag: 816ff7bb6c03be0b648d2f99c53d443a, version-id: None
+created test0001/0001/000019.jpg object; etag: a57484cb30e39da0bd382742fb3fac23, version-id: None
+created test0001/0001/000025.jpg object; etag: a65cc953b267c03097cbd487b7d28a73, version-id: None
+created test0001/0001/000021.jpg object; etag: 709bdcced05763738d52b8fc9fb84d17, version-id: None
+created test0001/0001/000019.jpg object; etag: 4e9a5243131e38b8d8840e6d998c68de, version-id: None
+created test0001/0001/000022.jpg object; etag: 2123eb873f6f25d4446b11189ab02fe4, version-id: None
+created test0001/0001/000023.jpg object; etag: 49a2b6ecf16ff7d3b3f20bde67c95ca1, version-id: None
+created test0001/0001/000017.jpg object; etag: a1992ebc70b3d92f4307c35fbc5b2854, version-id: None
