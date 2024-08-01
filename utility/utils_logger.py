@@ -31,20 +31,27 @@ class ImmediateStreamHandler(logging.StreamHandler):
     def emit(self, record):
         if sys.stdout is sys.__stdout__:
             super().emit(record)
-            self.flush()
         else:
             print(self.format(record),flush=True)
-            self.flush()
+        self.flush()
 
 
 # Create a root logger
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 
 # Create a console handler
 ch = ImmediateStreamHandler()
-ch.setLevel(logging.INFO)
+ch.setLevel(logging.DEBUG)
+
+# Create a file handler
+file_handler = logging.FileHandler(filename="error.log", mode='a')
+file_handler.setLevel(level=logging.WARNING)
 
 # Add the formatter to the console handler and logger
 ch.setFormatter(CustomFormatter())
+file_handler.setFormatter(fmt=CustomFormatter())
+
+# Add file handler
+logger.addHandler(file_handler)
 logger.addHandler(ch)

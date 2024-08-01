@@ -7,8 +7,8 @@ This pipeline aims to extract frames from a video, get clip vectors from the ext
 install ffmpeg and other libraries
 ```bash
 pip install -r requirements.txt
-apt-get install libopengl0 libegl1
 apt-get install ffmpeg
+apt-get install libopengl0 libegl1
 ```
 
 requirements.txt
@@ -32,32 +32,17 @@ python-dotenv
 opencv-python
 ```
 
+Download kandinsky model and process them.
+```
+python download_kandinsky_models.py
+python download_models.py
+python process_models.py
+```
+
 # Pipeline workflow
 
-### 1. The pipeline downloads a video and extracts the video metadata by the URL from YouTube.
- - video metadata
-    ```
-        file_hash: str
-        filename: str
-        file_path: str
-        file_type: str
-        source_url: str
-        video_length: int
-        video_resolution: str
-        video_frame_rate: int
-        video_description: str
-        dataset: str
-        upload_date: str
-
-    ```
-### 2. The pipeline saves the video metadata into MongoDB and uploads the video to Minio with a unique identifier.specific minio path
- - Save video meta data into ingress-video-collection
- - Upload video to minio
-    ```
-        {video_game_name}/{short_hash}_720p30fps.mp4
-        {video_game_name}/{short_hash}_720p30fps.json
-    ```
-### 3. Extract frames and metadata from video
+### 1. The pipeline downloads a video from ingress-video bucket of Minio.
+### 2. Extract frames and metadata from video
  - frame metadata
  ```
     {

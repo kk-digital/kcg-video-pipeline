@@ -179,4 +179,4 @@ def format_string(current_size, total_length, elapsed_time):
     humanized_n = _HUMANINZED_FORMAT % n_to_mb + _STR_MEGABYTE
 
     return _DISPLAY_FORMAT % (bar, humanized_n, humanized_total, percentage,
-                              elapsed_str, left_str, rate)
+                            elapsed_str, left_str, rate)

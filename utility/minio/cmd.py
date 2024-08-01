@@ -7,7 +7,7 @@ import sys
 base_dir = './'
 sys.path.insert(0, base_dir)
 
-from utility.logger import logger
+from utility.utils_logger import logger
 
 from config import MINIO_ADDRESS
 

@@ -5,78 +5,49 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import torch
 
 import sys
+
 base_dir = './'
 sys.path.insert(0, base_dir)
 
 from config import MINIO_ACCESS_KEY, MINIO_ADDRESS, MINIO_SECRET_KEY
 
+from schema import VideoMetaData
 from kandinsky.models.clip_image_encoder.clip_image_encoder import KandinskyCLIPImageEncoder
 from pipelines import VideoProcessingPipeline
 from utility.minio import cmd
+from utility.http.request import http_get_unprocessed_videos
+from utility import logger
 
-# define class for video information
-class VideoInfo:
-    def __init__(self, key: str, value: str, dataset: str) -> None:
-        self.key = key # video_url or video_hash
-        self.value = value
-        self.dataset = dataset
-
-def run_pipeline_with_url(minio_client, image_encoder, video_info: VideoInfo) -> bool:
-    pipeline = VideoProcessingPipeline(minio_client=minio_client, image_encoder=image_encoder, dataset_name=video_info.dataset)
-    return pipeline.run_pipeline_with_url(video_info.value)
-
-def run_pipeline_with_hash(minio_client, image_encoder, video_info: VideoInfo) -> bool:
-    pipeline = VideoProcessingPipeline(minio_client=minio_client, image_encoder=image_encoder, dataset_name=video_info.dataset)
-    return pipeline.run_pipeline_with_video_hash(video_info.value)
+def run_pipeline(minio_client, image_encoder, video: VideoMetaData) -> bool:
+    pipeline = VideoProcessingPipeline(minio_client=minio_client, image_encoder=image_encoder, video=video)
+    return pipeline.run()
 
 def run_video_processing(minio_client, 
-                         image_encoder,
-                         video_info_list:List[VideoInfo], 
-                         max_workers:int = 8) -> List[str]:
+                        image_encoder,
+                        videos: List[VideoMetaData], 
+                        batch_size: int = 1,
+                        max_workers:int = 8) -> List[str]:
     futures = []
     failed_video_info_list = []
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        for video_info in video_info_list:
-            if video_info.key == "video_url":
-                futures.append(executor.submit(run_pipeline_with_url, 
-                                                        minio_client, 
-                                                        image_encoder,
-                                                        video_info))
-            elif video_info.key == "video_hash":
-                futures.append(executor.submit(run_pipeline_with_hash, 
-                                               image_encoder,
-                                               minio_client, 
-                                               video_info))
-                
-        for future in as_completed(futures):
-            is_success, url = future.result()
-            if not is_success:
-                failed_video_info_list.append(url)
-    
+    len_videos = len(videos)
+    logger.info("video processing...")
+    for index in range(0, len_videos, batch_size):
+        batch_videos = videos[index:min(index+batch_size, len_videos)]
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            for video in batch_videos:
+                futures.append(executor.submit(run_pipeline, minio_client, image_encoder, video))
+
+            for future in as_completed(futures):
+                is_success, url = future.result()
+                if not is_success:
+                    failed_video_info_list.append(url)
+        logger.info(f"{index}/{len_videos} videos processed")
+
     return failed_video_info_list
 
-def get_video_info_list(csv_fname: str) -> List[VideoInfo]:
-    import pandas as pd
-
-    df = pd.read_csv(csv_fname)
-    video_info_list = []
-    
-    for _, row in df.iterrows():
-        video_info_list.append(VideoInfo(key="video_url", 
-                                        value=row['Video Url'],
-                                        dataset="test0002"))
-                                        # dataset=row['Dataset']))
-    
-    return video_info_list
 
 if __name__ == '__main__':
-    # TODO: add preprocessing to get video_info
-    video_info_list = []
-    video_info_list.append(VideoInfo(key="video_url", 
-                                     value="https://www.youtube.com/watch?v=kk7XWcIH2BA",
-                                     dataset="test0001"))
-    # Get video info list from csv file
-    # video_info_list = get_video_info_list("video-data-list.csv")
+
     # Load minio client using access and secret key, minio ip address
     minio_client = cmd.get_minio_client(minio_access_key=MINIO_ACCESS_KEY,
                                         minio_secret_key=MINIO_SECRET_KEY,
@@ -87,10 +58,12 @@ if __name__ == '__main__':
     encoder.load_submodels()
     print('Successfully loaded the model')
     
+    # Get the hash list of unprocessed ingress video
+    videos = http_get_unprocessed_videos()
     failed_video_list = run_video_processing(minio_client=minio_client, 
-                             image_encoder=encoder,
-                             video_info_list=video_info_list)
-    
+                            image_encoder=encoder,
+                            videos=videos)
+
     # Save list of failed URLs in pipeline in json format
     with open(file='failed_list.json', mode='w') as f:
         json.dump(obj=failed_video_list, fp=f, indent=4)
