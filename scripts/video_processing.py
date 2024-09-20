@@ -41,7 +41,7 @@ def run_video_processing(minio_client,
                 is_success, url = future.result()
                 if not is_success:
                     failed_video_info_list.append(url)
-        logger.info(f"{index}/{len_videos} videos processed")
+        logger.info(f"{index + 1}/{len_videos} videos processed")
 
     return failed_video_info_list
 

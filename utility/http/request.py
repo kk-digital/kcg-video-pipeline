@@ -19,7 +19,8 @@ from utility import logger
 MAX_RETRY = 6
 DELAY_TIME = 2
 
-SERVER_ADDRESS = "http://localhost:8000"
+from config import ORCHESTRATION_ADDRESS as SERVER_ADDRESS
+# SERVER_ADDRESS = "http://localhost:8000"
 
 def http_wrapper(http_request, retry = 0, *args, **wargs):
     try:
@@ -41,7 +42,7 @@ def http_wrapper(http_request, retry = 0, *args, **wargs):
 def http_add_video(video_metadata) -> Optional[VideoMetaData]:
 
     def add_video(video_metadata) -> Optional[VideoMetaData]:
-        url = f'{SERVER_ADDRESS}/ingress-videos/add-video'
+        url = f'{SERVER_ADDRESS}/ingress-videos/add-ingress-video'
         headers = {'Content-Type': 'application/json'}
 
         response = requests.post(url=url, json=video_metadata, headers=headers)
@@ -103,7 +104,7 @@ def http_add_image(image_data) -> Optional[Dict]:
 def http_get_video_metadata(video_hash) -> Optional[VideoMetaData]:
 
     def get_video_metadata(video_hash) -> Optional[VideoMetaData]:
-        url = f'{SERVER_ADDRESS}/ingress-videos/get?video_hash={video_hash}'
+        url = f'{SERVER_ADDRESS}/ingress-videos/get-ingress-video-by-video-id?video_hash={video_hash}'
         response = requests.get(url=url)
 
         video_metadata = None
@@ -124,8 +125,8 @@ def http_get_video_metadata(video_hash) -> Optional[VideoMetaData]:
     return http_wrapper(http_request=get_video_metadata, video_hash=video_hash)
 
 def http_get_unprocessed_videos() -> Optional[List[VideoMetaData]]:
-    def get_all_videos():
-        url = f'{SERVER_ADDRESS}/ingress-videos/unprocessed-list'
+    def get_unprocessed_videos():
+        url = f'{SERVER_ADDRESS}/ingress-videos/list-unprocessed-list'
         response = requests.get(url=url)
         
         video_metadata = None
@@ -143,7 +144,7 @@ def http_get_unprocessed_videos() -> Optional[List[VideoMetaData]]:
                 
         return video_metadata
     
-    return http_wrapper(http_request=get_all_videos)
+    return http_wrapper(http_request=get_unprocessed_videos)
 
 
 def http_get_video_game(game_id):
@@ -164,7 +165,7 @@ def http_get_video_game(game_id):
     return video_game
 
 def http_update_video_status_to_processed(video: VideoMetaData):
-    url = f'{SERVER_ADDRESS}/ingress-videos/update'
+    url = f'{SERVER_ADDRESS}/ingress-videos/update-ingress-video'
     response = requests.put(url=url, json=video.serialize())
     headers = {'Content-Type': 'application/json'}
     
@@ -182,7 +183,7 @@ def http_update_video_status_to_processed(video: VideoMetaData):
     return video_game
 
 def http_ingress_video_by_video_hash(video_id) -> Optional[VideoMetaData]:
-    url = f'{SERVER_ADDRESS}/ingress-videos/get?video_hash={video_id}'
+    url = f'{SERVER_ADDRESS}/ingress-videos/get-ingress-video-by-video-id?video_id={video_id}'
     response = requests.get(url=url)
 
     video_game = None

@@ -74,7 +74,7 @@ def save_ingress_video_from_manifest_to_db(manifest_fpath):
         metadata_list = []
         for ingress_video in batch_ingress_videos:
             # Save video metadata to database here
-            ingress_video['file_path'] = f'S_{ingress_video["steam_id"]}/{ingress_video["video_id"]}.{ingress_video["video_extension"]}'
+            ingress_video['file_path'] = f'ingress-video/S_{ingress_video["steam_id"]}/{ingress_video["video_id"]}.{ingress_video["video_extension"]}'
 
             metadata = {
                 "file_hash": ingress_video["file_hash"],
