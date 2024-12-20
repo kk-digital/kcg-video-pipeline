@@ -13,7 +13,7 @@ from urllib3.exceptions import NewConnectionError
 from tqdm import tqdm
 
 logger = logging.getLogger(__name__)
-BATCH_SIZE = 20
+BATCH_SIZE = 1
 RETRY_TIMES = 4
 SERVER_ADDRESS = 'http://103.20.60.90:8764'
 # SERVER_ADDRESS = 'http://127.0.0.1:8000'
@@ -56,10 +56,10 @@ def http_add_ingress_videos(ingress_videos):
             return response.json()["response"]
         else:
             # print(response.json())
-            logger.error("Error in adding ingress-videos, {}".format(response.json()))
+            print("Error in adding ingress-videos, {}".format(response.json()))
     except Exception as e:
         # print("Error", e)
-        logger.error(f"Error in saving ingress-video: {str(e)}")
+        print(f"Error in saving ingress-video: {str(e)}")
     return response
 
 def save_ingress_video_from_manifest_to_db(manifest_fpath):

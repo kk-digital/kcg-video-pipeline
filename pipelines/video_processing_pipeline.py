@@ -205,3 +205,6 @@ class VideoProcessingPipeline():
             logger.error(msg="Error on running pipeline:" + str(e))
     
         return is_success, self.video_metadata.video_id
+    
+    def get_uploaded_image_count(self):
+        return len(self._extracted_frames)

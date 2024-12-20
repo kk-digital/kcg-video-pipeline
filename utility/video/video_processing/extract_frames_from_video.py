@@ -24,17 +24,20 @@ def frame_generator(video_path, start=0., end=None, fps=1, width=1920, height=10
     
     process = (
         stream
-        .filter('fps', fps=fps)
+        .filter('fps', fps=1/3)
         .output('pipe:', format='rawvideo', pix_fmt='rgb24')
         .global_args('-loglevel', 'error')
         .run_async(pipe_stdout=True)
     )
+    
+    frame_num = 0
     while True:
         in_bytes = process.stdout.read(width * height * 3)
         if not in_bytes:
             break
         in_frame = np.frombuffer(in_bytes, np.uint8).reshape([height, width, 3])
-        yield in_frame
+        yield in_frame, frame_numd
+        frame_num += 1
     process.wait()
 
 
@@ -110,7 +113,8 @@ def process_video(video_path, output_dir, fps):
     old_thumbs = list()
 
     frames = []
-    for frame, frame_num in tqdm(key_frame_generator(video_path, width=info['width'], height=info['height'])):
+    # for frame, frame_num in tqdm(key_frame_generator(video_path, width=info['width'], height=info['height'])):
+    for frame, frame_num in tqdm(frame_generator(video_path, width=info['width'], height=info['height'])):
     
         kp, des = orb.detectAndCompute(frame, None)
 
