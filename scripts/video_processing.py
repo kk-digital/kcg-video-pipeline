@@ -20,7 +20,7 @@ from utility import logger
 
 def run_pipeline(minio_client, image_encoder, video: VideoMetaData) -> bool:
     pipeline = VideoProcessingPipeline(minio_client=minio_client, image_encoder=image_encoder, video=video)
-    return pipeline.run()
+    return pipeline.run(), pipeline.get_uploaded_image_count()
 
 def run_video_processing(minio_client, 
                         image_encoder,
@@ -31,6 +31,7 @@ def run_video_processing(minio_client,
     failed_video_info_list = []
     len_videos = len(videos)
     logger.info("video processing...")
+    total_uploaded_image_count = 0
     for index in range(0, len_videos, batch_size):
         batch_videos = videos[index:min(index+batch_size, len_videos)]
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -38,10 +39,12 @@ def run_video_processing(minio_client,
                 futures.append(executor.submit(run_pipeline, minio_client, image_encoder, video))
 
             for future in as_completed(futures):
-                is_success, url = future.result()
+                is_success, url, uploaded_image_count = future.result()
+                total_uploaded_image_count += uploaded_image_count
+                logger.critical(f"Uploaded images count: {total_uploaded_image_count}")
                 if not is_success:
                     failed_video_info_list.append(url)
-        logger.info(f"{index}/{len_videos} videos processed")
+        logger.info(f"{index + 1}/{len_videos} videos processed")
 
     return failed_video_info_list
 

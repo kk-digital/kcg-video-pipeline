@@ -183,11 +183,18 @@ class VideoProcessingPipeline():
     def delete_temp_files(self) -> None:
         delete_all_files(self._temp_dir)
     
+    def _update_video_metadata(self):
+        video_file_stats = os.stat(self._temp_video_path)
+        self.video_metadata.video_filesize = video_file_stats.st_size
+    
     def run(self) -> Tuple[bool, str]:
         is_success = False
         
         try:
             self._download_video_from_minio()
+            # temporary part: To update file size of video metadata 
+            # because file size of some video metadata is missing now.
+            self._update_video_metadata()
             self._extract_frame()
             self._save_metadata_in_db()
             self._upload_frame_into_minio()
@@ -198,3 +205,6 @@ class VideoProcessingPipeline():
             logger.error(msg="Error on running pipeline:" + str(e))
     
         return is_success, self.video_metadata.video_id
+    
+    def get_uploaded_image_count(self):
+        return len(self._extracted_frames)
